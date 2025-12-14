@@ -1,0 +1,30 @@
+{
+  "name": "@temp-monitor/api",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@temp-monitor/config": "workspace:*"
+  },
+  "dependencies": {
+    "@orpc/server": "catalog:",
+    "@orpc/client": "catalog:",
+    "@orpc/openapi": "catalog:",
+    "@orpc/zod": "catalog:",
+    "hono": "catalog:",
+    "drizzle-orm": "catalog:",
+    "@types/pg": "^8.15.6",
+    "dotenv": "catalog:",
+    "zod": "catalog:",
+    "@temp-monitor/auth": "workspace:*",
+    "@temp-monitor/db": "workspace:*"
+  }
+}
